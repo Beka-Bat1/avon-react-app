@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+/* eslint-disable jsx-a11y/heading-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./App.css";
 
 function App() {
