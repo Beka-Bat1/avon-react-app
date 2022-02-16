@@ -70,7 +70,7 @@ function App() {
               </a>
             </div>
             <div _ngcontent-ffy-c6="" className="btn">
-              <a _ngcontent-ffy-c6="" href="#">
+              <a _ngcontent-ffy-c6="" href="#form">
                 <button _ngcontent-ffy-c6="" className="reg">
                   გახდი წარმომადგენელი
                 </button>
@@ -81,98 +81,94 @@ function App() {
         </main>
       </app-header>
       <app-slider _ngcontent-ffy-c17="" _nghost-ffy-c13="">
-        <main _ngcontent-ffy-c13="" id="head" className="slider">
-          <ngb-carousel
-            _ngcontent-ffy-c13=""
-            tabindex="0"
+        <main id="head" className="slider">
+          <div
+            id="carouselExampleIndicators"
             className="carousel slide"
-            aria-activedescendant="slide-ngb-slide-1"
+            data-bs-ride="carousel"
             style={{ display: "block" }}
+            tabindex="0"
+            aria-activedescendant="slide-ngb-slide-1"
           >
-            <ol role="tablist" className="carousel-indicators">
-              <li
-                role="tab"
-                className=""
-                aria-labelledby="slide-ngb-slide-0"
-                aria-controls="slide-ngb-slide-0"
-                aria-selected="false"
-              ></li>
-              <li
-                role="tab"
-                aria-labelledby="slide-ngb-slide-1"
-                aria-controls="slide-ngb-slide-1"
-                aria-selected="true"
-                className="active"
-              ></li>
-              <li
-                role="tab"
-                aria-labelledby="slide-ngb-slide-2"
-                aria-controls="slide-ngb-slide-2"
-                aria-selected="false"
-                className=""
-              ></li>
-              <li
-                role="tab"
-                aria-labelledby="slide-ngb-slide-3"
-                aria-controls="slide-ngb-slide-3"
-                aria-selected="false"
-                className=""
-              ></li>
-            </ol>
+            <div role="tablist" class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
 
-            <div className="carousel-inner">
+            <div
+              class="carousel-inner"
+              id="slide-ngb-slide-0"
+              style={{ maxHeight: "70vh" }}
+            >
+              {/* item one  */}
               <div
                 role="tabpanel"
                 className="carousel-item"
                 id="slide-ngb-slide-0"
               >
-                <span className="sr-only"> Slide 1 of 4 </span>
-                <div _ngcontent-ffy-c13="" className="picsum-img-wrapper">
-                  <img
-                    _ngcontent-ffy-c13=""
-                    alt="Random first slide"
-                    src="./images/1.png"
-                  />
-                </div>
-                <div _ngcontent-ffy-c13="" className="carousel-caption">
-                  <h3 _ngcontent-ffy-c13=""></h3>
-                  <p _ngcontent-ffy-c13=""></p>
+                <div className="picsum-img-wrapper">
+                  <img alt="Random first slide" src="./images/1.png" />
                 </div>
               </div>
+
+              {/* item one end */}
+
+              {/* item two start */}
               <div
                 role="tabpanel"
                 className="carousel-item active"
                 id="slide-ngb-slide-1"
               >
-                <span className="sr-only"> Slide 2 of 4 </span>
-                <div _ngcontent-ffy-c13="" className="picsum-img-wrapper">
-                  <img
-                    _ngcontent-ffy-c13=""
-                    alt="Random second slide"
-                    src="./images/2.png"
-                  />
+                <div className="picsum-img-wrapper">
+                  <img alt="Random second slide" src="./images/2.png" />
                 </div>
-                <div _ngcontent-ffy-c13="" className="carousel-caption">
-                  <h3 _ngcontent-ffy-c13=""></h3>
-                  <p _ngcontent-ffy-c13=""></p>
+                <div className="carousel-caption">
+                  <h3></h3>
+                  <p></p>
                 </div>
               </div>
+
+              {/* item two end */}
+
               <div
                 role="tabpanel"
                 className="carousel-item"
                 id="slide-ngb-slide-2"
               >
-                <span className="sr-only"> Slide 3 of 4 </span>
-                <div _ngcontent-ffy-c13="" className="picsum-img-wrapper">
+                <div className="picsum-img-wrapper">
                   <img
-                    _ngcontent-ffy-c13=""
                     alt="Random third slide"
                     src="./images/3.png"
+                    className="d-block w-100"
                   />
                 </div>
-                <div _ngcontent-ffy-c13="" className="carousel-caption">
-                  <h3 _ngcontent-ffy-c13=""></h3>
-                  <p _ngcontent-ffy-c13=""></p>
+                <div className="carousel-caption">
+                  <h3></h3>
+                  <p></p>
                 </div>
               </div>
               <div
@@ -180,38 +176,43 @@ function App() {
                 className="carousel-item"
                 id="slide-ngb-slide-3"
               >
-                <span className="sr-only"> Slide 4 of 4 </span>
-                <div _ngcontent-ffy-c13="" className="picsum-img-wrapper">
+                <div className="picsum-img-wrapper">
                   <img
-                    _ngcontent-ffy-c13=""
                     alt="Random fourth slide"
                     src="./images/4.png"
+                    className="d-block w-100"
                   />
-                </div>
-                <div _ngcontent-ffy-c13="" className="carousel-caption">
-                  <h3 _ngcontent-ffy-c13=""></h3>
-                  <p _ngcontent-ffy-c13=""></p>
                 </div>
               </div>
             </div>
-
-            <a role="button" className="carousel-control-prev">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
               <span
+                class="carousel-control-prev-icon"
                 aria-hidden="true"
-                className="carousel-control-prev-icon"
               ></span>
-              <span className="sr-only">Previous</span>
-            </a>
-            <a role="button" className="carousel-control-next">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
               <span
+                class="carousel-control-next-icon"
                 aria-hidden="true"
-                className="carousel-control-next-icon"
               ></span>
-              <span className="sr-only">Next</span>
-            </a>
-          </ngb-carousel>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </main>
       </app-slider>
+
       <app-profit _ngcontent-ffy-c17="" _nghost-ffy-c7="">
         <main _ngcontent-ffy-c7="" className="profit">
           <div _ngcontent-ffy-c7="" className="profit-txt">
@@ -335,7 +336,12 @@ function App() {
       <app-register _ngcontent-ffy-c17="" _nghost-ffy-c8="">
         <main _ngcontent-ffy-c8="" id="register1" className="register">
           <div _ngcontent-ffy-c8="" className="formholder">
-            <form _ngcontent-ffy-c8="" onSubmit={formik.handleSubmit}>
+            <form
+              _ngcontent-ffy-c8=""
+              onSubmit={formik.handleSubmit}
+              name="form"
+              id="form"
+            >
               <h4
                 _ngcontent-ffy-c8=""
                 style={{ color: "#495057", textAlign: "center" }}
@@ -693,7 +699,7 @@ function App() {
           </div>
         </main>
       </app-footer1>
-      <app-footer2 _ngcontent-ffy-c17="" _nghost-ffy-c16="">
+      <div>
         <main _ngcontent-ffy-c16="" className="footer2">
           <div _ngcontent-ffy-c16="" className="icons">
             <a
@@ -729,11 +735,11 @@ function App() {
               <img _ngcontent-ffy-c16="" src="./images/imb.svg" alt="" />
             </a>
           </div>
-          <div _ngcontent-ffy-c16="" className="coporait">
-            <p _ngcontent-ffy-c16="">@2022 AVON კოსმეტიკ საქართველო</p>
+          <div className="coporait">
+            <p>@2022 AVON კოსმეტიკ საქართველო</p>
           </div>
         </main>
-      </app-footer2>
+      </div>
     </app-root>
   );
 }
