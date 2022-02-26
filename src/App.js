@@ -131,7 +131,15 @@ function App() {
                 id="slide-ngb-slide-0"
               >
                 <div className="picsum-img-wrapper">
-                  <img alt="Random first slide" src="./images/1.png" />
+                  <img
+                    alt="Random first slide"
+                    src="./images/1.png"
+                    className="d-block w-100"
+                  />
+                </div>
+                <div className="carousel-caption">
+                  <h3></h3>
+                  <p></p>
                 </div>
               </div>
 
@@ -144,7 +152,11 @@ function App() {
                 id="slide-ngb-slide-1"
               >
                 <div className="picsum-img-wrapper">
-                  <img alt="Random second slide" src="./images/2.png" />
+                  <img
+                    alt="Random second slide"
+                    src="./images/2.png"
+                    className="d-block w-100"
+                  />
                 </div>
                 <div className="carousel-caption">
                   <h3></h3>
@@ -171,6 +183,7 @@ function App() {
                   <p></p>
                 </div>
               </div>
+
               <div
                 role="tabpanel"
                 className="carousel-item"
@@ -325,8 +338,17 @@ function App() {
               </div>
             </div>
           </div>
-          <div _ngcontent-ffy-c7="" className="button">
-            <a _ngcontent-ffy-c7="" href="#" target="_blank">
+          <div
+            _ngcontent-ffy-c7=""
+            className="button"
+            style={{ marginTop: 10, marginBottom: 10 }}
+          >
+            <a
+              _ngcontent-ffy-c7=""
+              href="https://drive.google.com/file/d/1jqisw94u6Zi7nGiuSE0F_LcA0egJkEfy/view"
+              target="_blank"
+              rel="noreferrer"
+            >
               გაიგე მეტი
             </a>
           </div>
@@ -704,7 +726,7 @@ function App() {
           <div _ngcontent-ffy-c16="" className="icons">
             <a
               _ngcontent-ffy-c16=""
-              href="https://www.facebook.com/AvonGeorgia/"
+              href="https://www.facebook.com/eivongeoeka/"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -734,6 +756,9 @@ function App() {
             >
               <img _ngcontent-ffy-c16="" src="./images/imb.svg" alt="" />
             </a>
+          </div>
+          <div className="row h-25">
+            <p>+995 598 920 999</p>
           </div>
           <div className="coporait">
             <p>@2022 AVON კოსმეტიკ საქართველო</p>

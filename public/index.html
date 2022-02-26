@@ -1,460 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <title>გახდი წარმომადგენელი</title>
-    <!--<base href="/georgia-become-a-rep/">-->
-    <base href="." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://my.avon.ge/faviconVI.ico"
-    />
+  <title>გახდი წარმომადგენელი</title>
+  <!--<base href="/georgia-become-a-rep/">-->
+  <base href="." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <style>
-      :root {
-        --blue: #007bff;
-        --indigo: #6610f2;
-        --purple: #6f42c1;
-        --pink: #e83e8c;
-        --red: #dc3545;
-        --orange: #fd7e14;
-        --yellow: #ffc107;
-        --green: #28a745;
-        --teal: #20c997;
-        --cyan: #17a2b8;
-        --white: #fff;
-        --gray: #6c757d;
-        --gray-dark: #343a40;
-        --primary: #007bff;
-        --secondary: #6c757d;
-        --success: #28a745;
-        --info: #17a2b8;
-        --warning: #ffc107;
-        --danger: #dc3545;
-        --light: #f8f9fa;
-        --dark: #343a40;
-        --breakpoint-xs: 0;
-        --breakpoint-sm: 576px;
-        --breakpoint-md: 768px;
-        --breakpoint-lg: 992px;
-        --breakpoint-xl: 1200px;
-        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
-          sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-          "Noto Color Emoji";
-        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
-      }
+  <link rel="icon" type="image/x-icon" href="https://my.avon.ge/faviconVI.ico" />
+
+  <style>
+    :root {
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --primary: #007bff;
+      --secondary: #6c757d;
+      --success: #28a745;
+      --info: #17a2b8;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    @media print {
+
       *,
       :after,
       :before {
-        box-sizing: border-box;
+        text-shadow: none !important;
+        box-shadow: none !important;
       }
-      html {
-        font-family: sans-serif;
-        line-height: 1.15;
-        -webkit-text-size-adjust: 100%;
-        -webkit-tap-highlight-color: transparent;
+
+      @page {
+        size: a3;
       }
+
       body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-          Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif,
-          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        text-align: left;
-        background-color: #fff;
+        min-width: 992px !important;
       }
-      @media print {
-        *,
-        :after,
-        :before {
-          text-shadow: none !important;
-          box-shadow: none !important;
-        }
-        @page {
-          size: a3;
-        }
-        body {
-          min-width: 992px !important;
-        }
-      }
-      * {
-        scroll-behavior: smooth;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="./images/styles.088eb7d29f5d6ff7eea4.css"
-      media="all"
-      onload="this.media=&#39;all&#39;"
-    />
-    <noscript
-      ><link rel="stylesheet" href="styles.088eb7d29f5d6ff7eea4.css"
-    /></noscript>
-    <style></style>
-    <style>
-      .header[_ngcontent-ffy-c6] {
-        width: 100%;
-        height: 4rem;
-        background-color: #fff;
-        position: sticky;
-        top: 0%;
-        z-index: 9999;
-      }
-      .logoholder[_ngcontent-ffy-c6] {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .btn[_ngcontent-ffy-c6] {
-        display: flex;
-        justify-content: right;
-        width: 50%;
-      }
-      .logo[_ngcontent-ffy-c6] {
-        width: 50%;
-      }
-      .reg[_ngcontent-ffy-c6] {
-        margin-right: 3rem;
-        width: 240px;
-        border: none;
-        text-align: center;
-        border-radius: 26px 0;
-        color: #fff;
-        font-size: 1rem;
-        font-weight: bold;
-        line-height: 2rem;
-        height: 2rem;
-        background: rgb(153, 36, 177);
-        background: radial-gradient(
-          circle,
+    }
+
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="stylesheet" href="./images/styles.088eb7d29f5d6ff7eea4.css" media="all"
+    onload="this.media=&#39;all&#39;" />
+  <noscript>
+    <link rel="stylesheet" href="styles.088eb7d29f5d6ff7eea4.css" />
+  </noscript>
+  <style></style>
+  <style>
+    .header[_ngcontent-ffy-c6] {
+      width: 100%;
+      height: 4rem;
+      background-color: #fff;
+      position: sticky;
+      top: 0%;
+      z-index: 9999;
+    }
+
+    .logoholder[_ngcontent-ffy-c6] {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn[_ngcontent-ffy-c6] {
+      display: flex;
+      justify-content: right;
+      width: 50%;
+    }
+
+    .logo[_ngcontent-ffy-c6] {
+      width: 50%;
+    }
+
+    .reg[_ngcontent-ffy-c6] {
+      margin-right: 3rem;
+      width: 240px;
+      border: none;
+      text-align: center;
+      border-radius: 26px 0;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 2rem;
+      height: 2rem;
+      background: rgb(153, 36, 177);
+      background: radial-gradient(circle,
           rgba(153, 36, 177, 1) 0%,
-          rgba(228, 32, 57, 1) 100%
-        );
-      }
-      .logo img {
-        display: flex;
-        justify-content: end;
-        padding-left: 10%;
-      }
-      .headerBTM[_ngcontent-ffy-c6] {
-        width: 100%;
-        height: 2px;
-        background: rgb(153, 36, 177);
-        background: radial-gradient(
-          circle,
+          rgba(228, 32, 57, 1) 100%);
+    }
+
+    .logo img {
+      display: flex;
+      justify-content: end;
+      padding-left: 10%;
+    }
+
+    .headerBTM[_ngcontent-ffy-c6] {
+      width: 100%;
+      height: 2px;
+      background: rgb(153, 36, 177);
+      background: radial-gradient(circle,
           rgba(153, 36, 177, 1) 0%,
-          rgba(228, 32, 57, 1) 100%
-        );
-      }
-      .reg[_ngcontent-ffy-c6]:hover {
-        background: rgb(153, 36, 177);
-      }
-    </style>
-    <style>
-      .slider[_ngcontent-ffy-c13] {
-        width: 100%;
-        min-height: 50vh;
-        background-color: #f8f8fa;
-      }
-      img[_ngcontent-ffy-c13] {
-        width: 100%;
-        object-fit: cover;
-      }
-    </style>
-    <style>
-      .profit[_ngcontent-ffy-c7] {
-        width: 100%;
-        min-height: 100vh;
-        background-color: #f8f8fa;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-      }
-      .profit-content[_ngcontent-ffy-c7] {
-        width: 95%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
-      #register1[_ngcontent-ffy-c7] {
-        background: #f8f8fa;
-      }
-      .card[_ngcontent-ffy-c7] {
-        width: 18%;
-        border-radius: 56px 0;
-      }
-      .card[_ngcontent-ffy-c7] img[_ngcontent-ffy-c7] {
-        border-radius: 56px 0;
-      }
-      .profit-txt[_ngcontent-ffy-c7] {
-        text-align: center;
-      }
-    </style>
-    <style>
-      .register[_ngcontent-ffy-c8] {
-        width: 100%;
-        height: 100vh;
-        background: rgb(153, 36, 177);
-        background: radial-gradient(
-          circle,
+          rgba(228, 32, 57, 1) 100%);
+    }
+
+    .reg[_ngcontent-ffy-c6]:hover {
+      background: rgb(153, 36, 177);
+    }
+  </style>
+  <style>
+    .slider[_ngcontent-ffy-c13] {
+      width: 100%;
+      min-height: 50vh;
+      background-color: #f8f8fa;
+    }
+
+    img[_ngcontent-ffy-c13] {
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <style>
+    .profit[_ngcontent-ffy-c7] {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #f8f8fa;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    .profit-content[_ngcontent-ffy-c7] {
+      width: 95%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    #register1[_ngcontent-ffy-c7] {
+      background: #f8f8fa;
+    }
+
+    .card[_ngcontent-ffy-c7] {
+      width: 18%;
+      border-radius: 56px 0;
+    }
+
+    .card[_ngcontent-ffy-c7] img[_ngcontent-ffy-c7] {
+      border-radius: 56px 0;
+    }
+
+    .profit-txt[_ngcontent-ffy-c7] {
+      text-align: center;
+    }
+  </style>
+  <style>
+    .register[_ngcontent-ffy-c8] {
+      width: 100%;
+      height: 100vh;
+      background: rgb(153, 36, 177);
+      background: radial-gradient(circle,
           rgba(153, 36, 177, 1) 0%,
-          rgba(228, 32, 57, 1) 100%
-        );
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .formholder[_ngcontent-ffy-c8] {
-        width: 80%;
-        height: 80%;
-        overflow: hidden;
-        text-align: left;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        border-radius: 18px;
-        border: 1px solid white;
-        background: white;
-      }
-      .input-group[_ngcontent-ffy-c8] {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      .form-group[_ngcontent-ffy-c8] {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      p[_ngcontent-ffy-c8] {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-        padding: 2%;
-      }
-      #submitForm[_ngcontent-ffy-c8] {
-        align-items: center;
-        line-height: 2rem;
-      }
-      h4[_ngcontent-ffy-c8],
-      #submitForm[_ngcontent-ffy-c8] {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .buttonHolder[_ngcontent-ffy-c8] {
-        width: 100%;
-        height: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-    <style>
-      .tools[_ngcontent-ffy-c14] {
-        width: 100%;
-        height: 400px;
-        background: #f8f8fa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .ch[_ngcontent-ffy-c14] {
-        width: 96%;
-        height: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
+          rgba(228, 32, 57, 1) 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .formholder[_ngcontent-ffy-c8] {
+      width: 80%;
+      height: 80%;
+      overflow: hidden;
+      text-align: left;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 18px;
+      border: 1px solid white;
+      background: white;
+    }
+
+    .input-group[_ngcontent-ffy-c8] {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .form-group[_ngcontent-ffy-c8] {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    p[_ngcontent-ffy-c8] {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      padding: 2%;
+    }
+
+    #submitForm[_ngcontent-ffy-c8] {
+      align-items: center;
+      line-height: 2rem;
+    }
+
+    h4[_ngcontent-ffy-c8],
+    #submitForm[_ngcontent-ffy-c8] {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .buttonHolder[_ngcontent-ffy-c8] {
+      width: 100%;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <style>
+    .tools[_ngcontent-ffy-c14] {
+      width: 100%;
+      height: 400px;
+      background: #f8f8fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ch[_ngcontent-ffy-c14] {
+      width: 96%;
+      height: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .aon[_ngcontent-ffy-c14] {
+      width: 48%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media(max-width: 400px) {
       .aon[_ngcontent-ffy-c14] {
-        width: 48%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+        margin-bottom: 40px;
       }
+
+      .downloadBTN[_ngcontent-ffy-c14] {
+        flex-direction: column;
+      }
+
       .brochure[_ngcontent-ffy-c14] {
         width: 48%;
         height: 100%;
+        margin-top: 20px;
       }
-      .text-logo[_ngcontent-ffy-c14] {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        align-items: center;
-      }
-      .text[_ngcontent-ffy-c14] {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      .downloadBTN[_ngcontent-ffy-c14] {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      hr[_ngcontent-ffy-c14] {
-        border: none;
-        border-left: 1px solid rgb(153, 36, 177);
-        height: 100%;
-        width: 1px;
-        background: rgb(153, 36, 177);
-      }
-      .hr[_ngcontent-ffy-c14] {
-        height: 90%;
-      }
-    </style>
-    <style>
-      .footer[_ngcontent-ffy-c15] {
-        width: 100%;
-        height: 150px;
-        background: rgb(153, 36, 177);
-        background: radial-gradient(
-          circle,
-          rgba(153, 36, 177, 1) 0%,
-          rgba(228, 32, 57, 1) 100%
-        );
-        color: #fff;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-      }
-      .startup[_ngcontent-ffy-c15] {
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .STc[_ngcontent-ffy-c15] {
-        width: 98%;
-        min-height: 80vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        margin-bottom: 5rem;
-        margin-top: 5rem;
-      }
-      .STc-left[_ngcontent-ffy-c15] {
-        width: 49%;
-        min-height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        flex-direction: column;
-      }
-      .Stc-right[_ngcontent-ffy-c15] {
-        width: 30%;
-      }
-      .Stc-right[_ngcontent-ffy-c15] img[_ngcontent-ffy-c15] {
-        width: 100%;
-        border: 1px solid #9d24ac;
-        border-radius: 100px 0;
-      }
-    </style>
-    <style>
-      .footer1[_ngcontent-ffy-c5] {
-        width: 100%;
-        height: 100px;
-        background: rgb(41, 49, 50);
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .bullets[_ngcontent-ffy-c5] {
-        display: flex;
-        justify-content: space-around;
-        color: #fff;
-      }
-      .bullets[_ngcontent-ffy-c5] a[_ngcontent-ffy-c5] {
-        text-decoration: none;
-        color: #fff;
-        padding: 20px;
-      }
-    </style>
-    <style>
-      .footer2[_ngcontent-ffy-c16] {
-        width: 100%;
-        height: 100px;
-        background: rgb(25, 34, 40);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        color: #fff;
-        flex-direction: column;
-      }
-      .icons[_ngcontent-ffy-c16] {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        color: #fff;
-        flex-direction: row;
-      }
-      .icons[_ngcontent-ffy-c16] a[_ngcontent-ffy-c16] {
-        padding: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+    }
 
-    <!-- <script src="./images/runtime.6d7ea4187a580781f71a.js" defer=""></script>
+    .brochure[_ngcontent-ffy-c14] {
+      width: 48%;
+      height: 100%;
+    }
+
+    .text-logo[_ngcontent-ffy-c14] {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .text[_ngcontent-ffy-c14] {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .downloadBTN[_ngcontent-ffy-c14] {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    hr[_ngcontent-ffy-c14] {
+      border: none;
+      border-left: 1px solid rgb(153, 36, 177);
+      height: 100%;
+      width: 1px;
+      background: rgb(153, 36, 177);
+    }
+
+    .hr[_ngcontent-ffy-c14] {
+      height: 90%;
+    }
+  </style>
+  <style>
+    .footer[_ngcontent-ffy-c15] {
+      width: 100%;
+      height: 150px;
+      background: rgb(153, 36, 177);
+      background: radial-gradient(circle,
+          rgba(153, 36, 177, 1) 0%,
+          rgba(228, 32, 57, 1) 100%);
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .startup[_ngcontent-ffy-c15] {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .STc[_ngcontent-ffy-c15] {
+      width: 98%;
+      min-height: 80vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+    }
+
+    .STc-left[_ngcontent-ffy-c15] {
+      width: 49%;
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      flex-direction: column;
+    }
+
+    .Stc-right[_ngcontent-ffy-c15] {
+      width: 30%;
+    }
+
+    .Stc-right[_ngcontent-ffy-c15] img[_ngcontent-ffy-c15] {
+      width: 100%;
+      border: 1px solid #9d24ac;
+      border-radius: 100px 0;
+    }
+  </style>
+  <style>
+    .footer1[_ngcontent-ffy-c5] {
+      width: 100%;
+      height: 100px;
+      background: rgb(41, 49, 50);
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .bullets[_ngcontent-ffy-c5] {
+      display: flex;
+      justify-content: space-around;
+      color: #fff;
+    }
+
+    .bullets[_ngcontent-ffy-c5] a[_ngcontent-ffy-c5] {
+      text-decoration: none;
+      color: #fff;
+      padding: 20px;
+    }
+  </style>
+  <style>
+    .footer2[_ngcontent-ffy-c16] {
+      width: 100%;
+      height: 100px;
+      background: rgb(25, 34, 40);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      flex-direction: column;
+    }
+
+    .icons[_ngcontent-ffy-c16] {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      flex-direction: row;
+    }
+
+    .icons[_ngcontent-ffy-c16] a[_ngcontent-ffy-c16] {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <!-- <script src="./images/runtime.6d7ea4187a580781f71a.js" defer=""></script>
     <script src="./images/polyfills.0e3673fdb8523eb28ade.js" defer=""></script>
     <script src="./images/main.f0b5a1effae3f9a6a2a0.js" defer=""></script> -->
 
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -464,5 +502,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
